@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Empresa</title>
+</head>
+<body>
+    <h1>CRUD Empresa</h1>
+    <label>Selecciona tabla:
+        <select id="tablaSel">
+            <option value="Empleados">Empleados</option>
+            <option value="Puestos">Puestos</option>
+        </select>
+    </label>
+    <h2>Agregar nuevo</h2>
+    <form id="formAgregar" onsubmit="event.preventDefault(); agregar();">
+        <div id="formCampos"></div>
+        <button type="submit">Agregar</button>
+    </form>
+    <hr>
+    <div id="tabla"></div>
+    <script src="crud.js"></script>
+</body>
+</html>
